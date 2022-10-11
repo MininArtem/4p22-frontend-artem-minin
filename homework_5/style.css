@@ -1,0 +1,23 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.header{
+  position: fixed;
+  width: 1440px;
+  height: 89px;
+  background-color: #590BFF;
+}
+
+.header-name {
+  position: absolute;
+  left: 29px;
+  top: 13px;
+  margin: 0;
+  font-size: 54px;
+  font-weight: 400;
+  color:#FFFFFF;
+}
+
