@@ -9,9 +9,10 @@ body {
   width: 1440px;
   height: 89px;
   background-color: #590BFF;
+  z-index: 10;
 }
 
-.header-name {
+.header__name {
   position: absolute;
   left: 29px;
   top: 13px;
@@ -21,3 +22,75 @@ body {
   color:#FFFFFF;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.aside {
+  position: fixed;
+  top: 151px;
+}
+
+.aside__content {
+  height: 451px;
+  padding: 10px 18px 0 25px;
+  border-right: 2px solid #C4C4C4;
+}
+
+.aside__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.aside__list {
+  list-style-type: none;
+  margin-top: 23px;
+  padding: 0;
+}
+
+.aside__list-item {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.aside__list-link {
+  color: #FF710B;
+}
+
+.contacts {
+  position: absolute;
+  top: 143px;
+  left: 335px;
+  width: 1080px;
+}
+
+.contacts__element {
+  width: 1080px;
+  z-index: 1;
+}
+
+.contacts__element-title {
+  margin: 0;
+  height: 41px;
+  background-color: #590BFF;
+  color:#FFFFFF;
+  padding: 4px 13px;
+  font-size: 28px;
+  font-weight: 400;
+  position: sticky;
+  top: 88px;
+  
+}
+
+.contacts__element-list {
+  list-style-type: none;
+  margin-top: 13px;
+  padding-left: 13px;
+}
+
+.contacts__element-item {
+  font-size: 28px;
+}
