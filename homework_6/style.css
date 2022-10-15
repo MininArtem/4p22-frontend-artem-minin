@@ -2,8 +2,10 @@ body {
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  height: 100%;
+  height: fit-content;
   font-family: 'Roboto', 'Arial', sans-serif;
+  min-width: 720px;
+  max-width: 2560px;
 }
 
 .header{
@@ -21,7 +23,7 @@ body {
   left: 29px;
   top: 13px;
   margin: 0;
-  font-size: 54px;
+  font-size: 3.375em;
   font-weight: 400;
   color:#FFFFFF;
 }
@@ -59,7 +61,7 @@ body {
 
 .aside__title {
   margin: 0;
-  font-size: 28px;
+  font-size: 2.5vw;
   font-weight: 400;
 }
 
@@ -70,7 +72,7 @@ body {
 }
 
 .aside__list-item {
-  font-size: 24px;
+  font-size: 2vw;
   font-weight: 400;
   margin-top: 12px;
 }
@@ -82,12 +84,12 @@ body {
 .contacts {
   position: absolute;
   top: 143px;
-  left: 335px;
+  margin-left: 21vw;
   width: 80%;
 }
 
 .contacts__element {
-  width: 1080px;
+  width: 75vw;
   z-index: 1;
 }
 
