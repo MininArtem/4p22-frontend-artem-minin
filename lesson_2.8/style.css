@@ -6,54 +6,58 @@ body {
   margin: 0;
 }
 
-.box {
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  background: red;
+.header {
+  height: 40px;
+  background: gray;
 }
 
-@media screen and (min-width: 320px) and (max-width: 474px) {
-  .box {
-    width: 288px;
-    height: 288px;
-  }
-} 
-@media screen and (min-width: 475px) and (max-width: 719px) {
-  .box {
-    width: 443px;
-    height: 443px;
-  }
-} 
-@media screen and (min-width: 720px) and (max-width: 959px) {
-  .box {
-    width: 688px;
-    height: 688px;
-  }
-} 
-@media screen and (min-width:960px) and (max-width: 1023px) {
-  .box {
-    width: 928px;
-    height: 928px;
-  }
-} 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .box {
-    width: 982px;
-    height: 982px;
-  }
-} 
-@media screen and (min-width: 1280px) and (max-width: 11439px) {
-  .box {
-    width: 1248px;
-    height: 1248px;
-  }
-} 
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
 
-@media screen and (min-width: 1440px) {
-  .box {
-    width: 1408px;
-    height: 1408px;
+.sidebar {
+  width: calc(400 / 1440 * 100vw);
+}
+
+.article {
+  padding: 0 40px;
+}
+
+.article__heading {
+  color: purple;
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.article__section-paragraph {
+  font-size: 22px;
+}
+
+.footer {
+  height: 200px;
+  background: gray;
+}
+
+@media screen and (max-width: 720px) {
+  .content {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .article {
+    margin-top: 60px;
+    padding: 0 16px;
+  }
+
+  .article__section-paragraph {
+    font-size: 28px;
   }
 }
 
