@@ -7,23 +7,53 @@ body {
 }
 
 .box {
+  margin: 0 auto;
   width: 200px;
   height: 200px;
   background: red;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 474px) {
   .box {
-    width: 100px;
-    height: 100px;
-    background: green;
+    width: 288px;
+    height: 288px;
   }
-}
-
-@media screen and (min-width: 2056px) {
+} 
+@media screen and (min-width: 475px) and (max-width: 719px) {
   .box {
-    width: 100%; 
-    height: 100vh;
+    width: 443px;
+    height: 443px;
+  }
+} 
+@media screen and (min-width: 720px) and (max-width: 959px) {
+  .box {
+    width: 688px;
+    height: 688px;
+  }
+} 
+@media screen and (min-width:960px) and (max-width: 1023px) {
+  .box {
+    width: 928px;
+    height: 928px;
+  }
+} 
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .box {
+    width: 982px;
+    height: 982px;
+  }
+} 
+@media screen and (min-width: 1280px) and (max-width: 11439px) {
+  .box {
+    width: 1248px;
+    height: 1248px;
+  }
+} 
+
+@media screen and (min-width: 1440px) {
+  .box {
+    width: 1408px;
+    height: 1408px;
   }
 }
 
