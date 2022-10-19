@@ -6,9 +6,28 @@
   <title>Login Form</title>
   <link rel="shortcut icon" href="./images/login.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="wrapper">
+      <form class="form">
+        <h1 class="form__header">Вход</h1>
+        <div class="form-input__email">
+          <label for="email" class="form-input__email-label">Email</label>
+          <input class="form-input__email-field" type="email" name="email" placeholder="Введите email">
+        </div>
+        <div class="form-input__password">
+          <label for="password" class="form-input__password-label">Email</label>
+          <input class="form-input__password-field" type="password" name="password" placeholder="Введите пароль">
+        </div>
+				<div class="form-input__checkbox">
+					<input class="form-input__checkbox-field" type="checkbox" name="checkbox" autocomplete="off">
+					<label class="form-input__checkbox-label" for="check">Я согласен получать обновления на почту</label>
+				</div>
+        <div class="button">
+          <button class="form__button" type="submit">Войти</button>
+        </div>
+      </form>
+  </div>
 </body>
 </html>
