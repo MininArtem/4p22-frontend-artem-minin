@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Roboto";
+  color: #787878;
 }
 
 .header {
@@ -13,6 +14,39 @@ body {
   display: flex;
   flex-direction: row;
   font-weight: 700;
+  align-items: center;  
+}
+
+.header-logo {
+  width: 222px;
+  height: 50px;
+  margin: 18px 0 12px 30px;
+}
+
+.header-content__title {
+  font-size: 36px;
+  font-weight: 700;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.header-content__link-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  margin-right: 43px;
+
+}
+
+.header-content_link-item-reg {
+  text-decoration: none;
+  color: #787878;
+  margin-right: 28px;
+}
+
+.header-content_link-item-logIn {
+  text-decoration: none;
+  color: #1A226B;
 }
 
 .wrapper {
