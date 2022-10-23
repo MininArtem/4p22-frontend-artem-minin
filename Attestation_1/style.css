@@ -9,7 +9,6 @@ body {
 }
 
 .header {
-  height: 80px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: row;
@@ -18,23 +17,23 @@ body {
 }
 
 .header-logo {
-  width: 222px;
-  height: 50px;
+  width: calc(222 / 1440 * 100vw);
+  height: calc(50 / 1440 * 100vw);
   margin: 18px 0 12px 30px;
 }
 
 .header-content__title {
-  font-size: 36px;
+  font-size: calc(36 / 1440 * 100vw);
   font-weight: 700;
   flex-grow: 1;
-  padding-left: 30px;
+  padding-left: calc(30 / 1440 * 100vw);
 }
 
 .header-content__link-container {
   display: flex;
   flex-direction: row;
-  font-size: 24px;
-  margin-right: 43px;
+  font-size: calc(24 / 1440 *100vw);
+  margin-right: calc(43 / 1440 * 100vw);
 
 }
 
@@ -49,131 +48,57 @@ body {
   color: #1A226B;
 }
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
 .form {
   background-color: #fff;
-  border-radius: 20px;
-  margin-top: 82px;
-  width: 600px;
-  height: fit-content;
-  padding: 26px 45px;
+  margin: calc(205 / 1440 * 100vw) auto;
+  width: calc(600 / 1440 * 100vw);
+  padding: calc(26 / 1440 * 100vw) calc(45 / 1440 * 100vw)calc(37 / 1440 * 100vw);
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
 }
 
 .form__header {
   margin: 0;
   text-align: center;
-  font-size: 50px;
+  font-size: calc(50 / 1440 * 100vw);
   font-weight: 700;
-  color: #787878;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .form-input__email {
-  margin-top: 17px;
+  margin-top: calc(17 / 1440 * 100vw);
 } 
 
-.form-input__email-label {
+.form-input__email-registration {
+  margin-top: calc(15 / 1440 * 100vw);
+}
+
+.form-input__label {
   font-weight: 700;
-  font-size: 16px;
+  font-size: calc(16 / 1440 * 100vw);
   color: #787878;
 }
 
-.form-input__email-field {
+.form-input__field {
   width: 100%;
-  height: 49px;
-  margin-top: 3px;
-  padding-left: 15px;
+  height: calc(49 / 1440 * 100vw);
+  margin-top: calc(3 /1440 * 100vw);
+  padding-left: calc(15 / 1440 * 100vw);
   background: #FFFFFF;
   border: 2px solid #787878;
-  border-radius: 10px;
   font-weight: 700;
-  font-size: 28px;
-  opacity: 10;
-  color: #787878;
+  font-size: calc(28 / 1440 * 100vw);
+  color:#787878;
 }
 
-.form-input__email-field::placeholder { 
+.form-input__field::placeholder { 
   color: #CCCCCC;
 }
 
 .form-input__password {
-  margin-top: 11px;
+  margin-top: calc(11/1440 * 100vw);
 } 
 
-.form-input__password-label {
-  visibility: hidden;
-}
-
-.form-input__password-field {
-  width: 100%;
-  height: 49px;
-  padding-left: 15px;
-  background: #FFFFFF;
-  border: 2px solid #787878;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 28px;
-  opacity: 10;
-  color: #787878;
-}
-
-.form-input__password-field::placeholder { 
-  color: #CCCCCC;
-}
-
 .form-input__checkbox {
-  margin-top: 16px;
-  position: relative;
-}
-
-.form-input__checkbox-field {
-  position: absolute;
-  display: inline;
-  opacity: 0;
-  width: 60%;
-  height: 100%;
-  z-index: 1;
-}
-
-.form-input__checkbox-label {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 400;
-  height: 24px;
-  color: #787878;
-  padding-left: 35px;
-  padding-top: 5px;
-}
-
-.form-input__checkbox-label::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  border: 2px solid #787878;
-  border-radius: 7px;
-}
-
-.form-input__checkbox-label::after {
-  content: "✔";
-  position: absolute;
-  top: 4px;
-  left: 8px;
-  opacity: 0;
-  transition: .2 opacity;
-}
-
-.form-input__checkbox-field:checked + .form-input__checkbox-label::after {
-  opacity: 1;
+  margin-top: calc(11 / 768 * 100vh);
 }
 
 .button {
@@ -182,71 +107,68 @@ body {
 }
 
 .form__button {
-  width: 180px;
-  height: 52px;
-  margin-top: 50px;
-  font-size: 24px;
+  width: calc(180 / 1440 * 100vw);
+  height: calc(52 / 1440 * 100vw);
+  font-size: calc(24 / 1440 * 100vw);
   font-weight: 700;
   text-align: center;
   color: #fff;
-  border-radius: 10px;
   border: none;
   background-color: #1A226B;
+  margin-top: calc(52 / 1440 * 100vw);
 }
 
 @media screen and (max-width: 768px) {
+  .header-logo {
+    width: calc(124 / 768 * 100vw);
+    height: calc(25 / 768 * 100vw);
+    margin: 20px 0 25px 30px;
+  }
+
+  .header-content__title {
+    font-size: calc(24 / 768 * 100vw);
+    padding-left: calc(34 / 768 * 100vw);
+  }
+
+  .header-content__link-container {
+    font-size: calc(16 / 768 * 100vw);
+    margin-right: calc(43 / 768 * 100vw);
+    margin-right: calc(28 / 768 * 100vw);
+  }
+  
+  .header-content_link-item-reg {
+    margin-right: calc(36 / 768 * 100vw);
+  }
+
   .form {
-    width: calc(728 / 768 * 100vw);
-    height: auto;
-    margin: 20px;
-    padding: 38px 45px;
-    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    width: calc(600/ 768 * 100vw);
+    margin: calc(160 / 768 * 100vw) auto;
+    padding: calc(26 / 768 * 100vw) calc(45 / 768 * 100vw)calc(37 / 768 * 100vw);
   }
 
   .form__header {
-    margin: 0;
-    text-align: center;
-    font-size: 60px;
-    text-shadow: none;
+    font-size: calc(50 / 768 * 100vw);
   }
 
-  .form-input__email {
-    margin-top: 13px;
+  .form-input__label {
+    font-size: calc(16 / 768 * 100vw);
   }
 
-  .form-input__email-label {
-    font-size: 24px;
+  .form-input__field {
+    height: calc(49 / 768 * 100vw);
+    margin-top: calc ( 3 / 768 * 100vw);
+    padding-left: calc(15 / 768 * 100vw);
+    font-size: calc(28 / 768 * 100vw);
   }
 
-  .form-input__email-field {
-    margin-top: 8px;
-}
-
-  .form-input__password-label {
-    visibility: visible;
-    font-weight: 700;
-    font-size: 24px;
-    color: #787878;
-  }
-
-  .form-input__password-field {
-    margin-top: 8px;
-  }
-
-  .form-input__checkbox-label {
-    font-size: 18px;
-  }
-
-  .form-input__checkbox-label::after {
-    top: 1px;
-    left: 7px;
+  .form-input__checkbox {
+    margin-top: calc(11 / 768 * 100vh);
   }
 
   .form__button {
-    width: 220px;
-    height: 80px;
-    margin-top: 64px;
-    font-size: 32px;
-    border-radius: 10px;
+    width: calc(180 / 768 * 100vw);
+    height: calc(52 / 768 * 100vw);
+    font-size: calc(24 / 768 * 100vw);
+    margin-top: calc(52 / 768 * 100vw);
   }
 }

@@ -1,0 +1,105 @@
+.header-content_link-item-registration {
+  text-decoration: none;
+  color: #1A226B;
+  margin-right: 28px;
+}
+
+.header-content_link-item-log {
+  text-decoration: none;
+  color: #787878;
+}
+
+
+.form-input__radio-button-label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 400;
+  font-size: calc(14/1440 * 100vw);
+}
+
+.form-input__radio-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  appearance: none;
+  background-color: #fff;
+  color: #787878;
+  width: calc(20/1440 * 100vw);
+  height: calc(20/1440 * 100vw);
+  border: 2px solid #787878;
+  border-radius: 50%;
+  margin-right: calc(13 / 1440 * 100vw);
+  margin-bottom: calc(11 / 1440 * 100vw);
+}
+
+.form-input__radio-button:checked:before {
+  transform: scale(1);
+}
+
+.form-input__radio-button::before {
+  content: "";
+  width: calc(12/1440 * 100vw);
+  height: calc(12/1440 * 100vw);
+  border-radius: 50%;
+  transform: scale(0);
+  box-shadow: inset calc(12/1440 * 100vw) calc(12/1440 * 100vw) #787878;
+}
+
+.form-input__textarea {
+  margin-top: calc(5/1440 * 100vw);
+  width: calc(509/1440 * 100vw);
+  height: calc(246/1440 * 100vw);
+  padding-left: calc(15 /1440 * 100vw);
+  font-weight: 700;
+  font-size: calc(28/1440 * 100vw);
+  border: 2px solid #787878;
+}
+
+.form-input__textarea::placeholder {
+  color: #CCCCCC;
+}
+
+.subscription-form {
+  margin-top: calc(24/1440 * 100vw);
+}
+
+.subscription-form > input {
+  display: none;
+}
+
+.subscription__checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: calc(16 / 1440 * 100vw);
+  font-weight: 400;
+}
+
+.subscription__checkbox:checked + label::before {
+  background-color: #787878;
+}
+
+.subscription__checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: calc(16 / 1440 * 100vw);
+  height: calc(16 / 1440 * 100vw);
+  border: 2px solid #787878;
+  background-clip: content-box;
+  padding: 4px;
+  margin-right: 10px;
+}
+
+.registration__button {
+  width: calc(180 / 1440 * 100vw);
+  height: calc(52 / 1440 * 100vw);
+  font-size: calc(24 / 1440 * 100vw);
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background-color: #1A226B;
+  margin-top: calc(56 / 1440 * 100vw);
+}

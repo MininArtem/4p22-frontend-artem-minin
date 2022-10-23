@@ -3,18 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>registration</title>
+  <title>Registration form</title>
   <link rel="shortcut icon" href="./images/site-logo.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-registration.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    
+    <img class="header-logo" src="./images/innopolis-logo.png" alt="innopolis-logo">
+    <div class="header-content__title">
+      PSC Frontend
+    </div>
+    <div class="header-content__link-container"> 
+      <div>
+        <a class="header-content_link-item-registration" href="./registration.html">Регистрация</a>
+      </div>
+      <div>
+        <a class="header-content_link-item-log" href="./index.html">Вход</a>
+      </div>
+    </div> 
   </header>
-  <main class="wrapper">
-      
-  </main>
+  <form class="form">
+    <h1 class="form__header">Вход</h1>
+    <div class="form-input__email-registration">
+      <label for="email" class="form-input__label">Email</label>
+      <input class="form-input__field" type="email" name="email" placeholder="Введите email">
+    </div>
+    <div class="form-input__password">
+      <label for="password" class="form-input__label">Пароль</label>
+      <input class="form-input__field" type="password" name="password" placeholder="Введите пароль">
+    </div>
+    <div class="form-input__password">
+      <label for="password" class="form-input__label">Подтверждение пароля</label>
+      <input class="form-input__field" type="password" name="password" placeholder="Подтвердите пароль">
+    </div>
+    <div class="form-input__checkbox">
+      <div class="form-input__label">
+        Пол
+      </div>
+      <label class="form-input__radio-button-label">
+        <input type="radio" name="sex" value="man" class="form-input__radio-button">
+        Мужчина
+      </label>
+      <label class="form-input__radio-button-label">
+        <input type="radio" name="sex" value="woman" class="form-input__radio-button">
+        Женщина
+      </label>
+    </div>
+    <div class="form-input__label">
+      О себе
+    </div>
+    <textarea class="form-input__textarea" name="about" id="about" placeholder="Расскажите о себе"></textarea>
+    <div class="subscription-form">
+      <input type="checkbox" type="checkbox" id="checkbox" value="true" class="subscription__checkbox">
+      <label class="subscription__checkbox-label" for="checkbox">Я согласен получать обновления на почту</label>
+    </div>
+    <div class="button">
+      <button class="registration__button" type="submit">Регистрация</button>
+    </div>
+  </form>
   <footer class="footer">
 
   </footer>
