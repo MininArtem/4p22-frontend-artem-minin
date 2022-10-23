@@ -7,8 +7,15 @@ body {
   font-family: "Roboto";
 }
 
+.header {
+  height: 80px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+}
+
 .wrapper {
-  background-color: #1B2473;
   width: 100vw;
   height: 100vh;
   display: flex;
