@@ -103,3 +103,50 @@
   background-color: #1A226B;
   margin-top: calc(56 / 1440 * 100vw);
 }
+
+@media screen and (max-width: 768px) {
+  .form-input__radio-button-label {
+    font-size: calc(14 / 768 * 100vw);
+    margin-left: calc( -6 /768 * 100vw);
+  }
+
+  .form-input__radio-button {
+    width: calc(20/ 768 * 100vw);
+    height: calc(20/ 768 * 100vw);
+    margin-right: calc(13 / 768 * 100vw);
+    margin-bottom: calc(11 / 768 * 100vw);
+}
+
+  .form-input__radio-button::before {
+    content: "";
+    width: calc(12/768 * 100vw);
+    height: calc(12/768 * 100vw);
+    box-shadow: inset calc(12/768 * 100vw) calc(12/768 * 100vw) #787878;
+  }
+
+  .form-input__textarea {
+    margin-top: calc(5/768 * 100vw);
+    width: calc(509/768 * 100vw);
+    height: calc(246/768 * 100vw);
+    padding-left: calc(15 /768 * 100vw);
+    font-size: calc(28/768 * 100vw);
+  }
+
+  .subscription__checkbox-label {
+    font-size: calc(14 / 768 * 100vw);
+  }
+
+  .subscription__checkbox-label::before {
+    content: "";
+    width: calc(16 / 768 * 100vw);
+    height: calc(16 / 768 * 100vw);
+    padding: calc(4 / 768 * 100vw);
+  }
+
+  .registration__button {
+    width: calc(180 / 768 * 100vw);
+    height: calc(52 / 768 * 100vw);
+    font-size: calc(24 / 768 * 100vw);
+    margin-top: calc(56 / 768 * 100vw);
+  }
+}
