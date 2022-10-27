@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+      <form class="form">
+        <h1 class="form__header">Калькулятор</h1>
+        <div class="form-input">
+          <label for="first-number" class="form-input__label">Первое число</label>
+          <input class="form-input__field" type="text" name="first-number" placeholder="Введите первое число">
+        </div>
+        <div class="form-input">
+          <label for="symbol" class="form-input__label">знак</label>
+          <input class="form-input__field" type="text" name="symbol" placeholder="Введите: * , / , + , - ">
+        </div>
+        <div class="form-input">
+          <label for="second-number" class="form-input__label">Второе число</label>
+          <input class="form-input__field" type="text" name="second-number" placeholder="Введите второе число">
+        </div>
+        <div class="button">
+          <button class="form__button" type="submit">Рассчитать</button>
+        </div>
+
+        <div class="form-input__result">
+        </div>
+      </form>
+  </div>
+</body>
+</html>
