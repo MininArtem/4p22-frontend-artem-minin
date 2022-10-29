@@ -14,23 +14,24 @@
         <h1 class="form__header">Калькулятор</h1>
         <div class="form-input">
           <label for="first-number" class="form-input__label">Первое число</label>
-          <input class="form-input__field" type="text" name="first-number" placeholder="Введите первое число">
+          <input id="firstNumber" class="form-input__field" type="text" name="first-number" placeholder="Введите первое число">
         </div>
         <div class="form-input">
           <label for="symbol" class="form-input__label">знак</label>
-          <input class="form-input__field" type="text" name="symbol" placeholder="Введите: * , / , + , - ">
+          <input id="operator" class="form-input__field" type="text" name="symbol" placeholder="Введите: * , / , + , - ">
         </div>
         <div class="form-input">
           <label for="second-number" class="form-input__label">Второе число</label>
-          <input class="form-input__field" type="text" name="second-number" placeholder="Введите второе число">
+          <input id="secondNumber" class="form-input__field" type="text" name="second-number" placeholder="Введите второе число">
         </div>
         <div class="button">
-          <button class="form__button" type="submit">Рассчитать</button>
+          <button id="submitButton" class="form__button" type="submit">Рассчитать</button>
         </div>
 
-        <div class="form-input__result">
-        </div>
+        <input id="result" class="form-input__result" placeholder="Здесь будет результат">
+        </input>
       </form>
+      <script src="./script.js"></script>
   </div>
 </body>
 </html>
