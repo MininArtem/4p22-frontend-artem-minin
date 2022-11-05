@@ -9,8 +9,8 @@ button.addEventListener('click', (event) => {
   let secondNumber = document.getElementById('secondNumber').value;
   let operator = document.getElementById('operator').value;
   let result;
-  const firstValue = Number(firstNumber);
-  const secondValue = Number(secondNumber);
+  const firstValue = parseFloat(firstNumber);
+  const secondValue = parseFloat(secondNumber);
 
   switch (operator.trim()) {
     case '':
@@ -28,8 +28,13 @@ button.addEventListener('click', (event) => {
         break;
       }
     case '+':
-      result = firstValue + secondValue;
-      break;
+      if(firstValue % 1 !== 0 || secondValue % 1 !== 0) {
+        result = (firstNumber * 10 + secondNumber * 10) / 10;
+        break;
+      } else {
+        result = firstValue + secondValue;
+        break;
+      }
     case '-':
       result = firstValue - secondValue;;
       break;
